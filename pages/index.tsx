@@ -44,7 +44,7 @@ export default function Home() {
           changePage={changePage}
         />
       </div>
-      <div className="mt-20">
+      <div className="mt-5">
         {page !== "about" ? (
           <div>
             <Homepage t={t} />
