@@ -16,6 +16,7 @@ const config: Config = {
       colors: {
         'xanh-le': '#115646',
         'vang-khe': '#FFD770',
+        'hong-bede': '#FF8282',
       },
     },
   },
