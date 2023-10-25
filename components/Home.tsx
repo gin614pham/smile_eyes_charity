@@ -36,8 +36,8 @@ const Homepage = (t: Props) => {
                 ádjasgdajs duiassgdasj
               </p>
             </div>
-            <div className="flex items-stretch w-full">
-              <CiShare1 className="self-end" />
+            <div className="flex flex-row-reverse w-full">
+              <CiShare1 className=" w-6 h-6" />
             </div>
             <div className="flex flex-row justify-between my-2">
               <a className="font-bold underline" href="#">
@@ -54,14 +54,14 @@ const Homepage = (t: Props) => {
                 <span>40%</span>
               </div>
 
-              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-yellow-500">
+              <div className="w-full bg-gray-200 rounded-full h-2.5">
                 <div
                   className="bg-yellow-500 h-2.5 rounded-full"
                   style={{ width: "40%" }}
                 />
               </div>
             </div>
-            <button className="bg-red-300 rounded-lg mx-5 my-5 px-2 py-2 font-bold">
+            <button className="bg-red-300 rounded-lg p-2 font-bold">
               <div>{t.t.BUTTON_BE_THE_CONTRIBUTOR_OR_SPONSOR}</div>
             </button>
           </div>
