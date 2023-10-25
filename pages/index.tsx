@@ -1,16 +1,11 @@
 import { Inter } from "next/font/google";
-<<<<<<< HEAD
-
 import Contact from "@/components/Contact";
 import { useState } from "react";
 import ja from "@/components/locale/ja";
 import en from "@/components/locale/en";
 import vn from "@/components/locale/vn";
 import AboutPage from "./about";
-import Header from "@/components/Header";
-=======
 import Header from "@/components/Navbar";
->>>>>>> ad401daa257897dd2327213c2aafed43d8468e1d
 import Homepage from "@/components/Home";
 import Content from "@/components/Content";
 import Completed from "@/components/Completed";
