@@ -17,6 +17,7 @@ const config: Config = {
         'xanh-le': '#115646',
         'vang-khe': '#FFD770',
         'hong-bede': '#FF8282',
+        'xanh-dam': '#3E8776',
       },
     },
   },
