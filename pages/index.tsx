@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-import Header from "@/components/Header";
+import Header from "@/components/Navbar";
 import Homepage from "@/components/Home";
 import Content from "@/components/Content";
 import Completed from "@/components/Completed";
@@ -30,7 +30,7 @@ export default function Home() {
     }
   };
   return (
-    <div className="bg-white">
+    <div className="bg-white dark:text-black">
       <div className="sticky top-0 z-50">
         <Header language={language} setLanguage={changeLanguage} t={t} />
       </div>

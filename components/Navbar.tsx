@@ -49,31 +49,31 @@ const Header = (props: props) => {
     },
   ];
   return (
-    <div className="bg-green-700 flex flex-row justify-between h-16 items-center">
+    <div className="bg-xanh-le flex flex-row justify-between p-4 items-center">
       <div className="mx-5 flex flex-row items-center">
-        <Image src="/logo.svg" alt="logo" width={50} height={50} />
-        <h1 className=" text-yellow-300 mx-5">SMILE EYES CHARITY</h1>
+        <Image src="/logo.svg" alt="logo" width={60} height={60} />
+        <h1 className="text-vang-khe mx-5">SMILE EYES CHARITY</h1>
       </div>
       <div className="flex flex-row justify-between gap-5 mx-5">
-        <a className="text-lg text-white hover:text-yellow-300" href="#project">
+        <a className="text-lg text-white hover:text-vang-khe" href="#project">
           {props.t.PROJECT}
         </a>
         <a
-          className="text-lg text-white hover:text-yellow-300"
+          className="text-lg text-white hover:text-vang-khe"
           href="#achievements"
         >
           {props.t.ACHIEVEMENT}
         </a>
-        <a className="text-lg text-white hover:text-yellow-300" href="#blog">
+        <a className="text-lg text-white hover:text-vang-khe" href="#blog">
           {props.t.BLOG}
         </a>
         <a
-          className="text-lg text-white hover:text-yellow-300"
+          className="text-lg text-white hover:text-vang-khe"
           href="#sponsors"
         >
           {props.t.SPONSORS}
         </a>
-        <a className="text-lg text-white hover:text-yellow-300" href="#">
+        <a className="text-lg text-white hover:text-vang-khe" href="#">
           {props.t.QACONTACT}
         </a>
         <div className="flex flex-row gap-1">
