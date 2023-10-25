@@ -3,7 +3,7 @@ import { CiShare1 } from "react-icons/ci";
 
 const CardCompleted = () => {
   return (
-    <div className="shadow-lg border border-gray-200 bg-white rounded-lg mt-5 my-3">
+    <div className="h-full shadow-lg border border-gray-200 bg-white rounded-lg">
       <div className="flex flex-col gap-2">
         <div className="p-3">
           <p className="text-2xl font-bold">Project name</p>
@@ -14,7 +14,7 @@ const CardCompleted = () => {
         </div>
         <iframe
           width="auto"
-          height="315"
+          height="400"
           src="https://www.youtube.com/embed/543jwFfCZvg?si=qPcHutduGIYha_68"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -39,8 +39,7 @@ const CardCompleted = () => {
               <span>Project:</span>
               <span>100%</span>
             </div>
-
-            <div className="w-full bg-gray-200 rounded-full h-2.5 ">
+            <div className="w-full bg-gray-200 rounded-full h-2.5">
               <div
                 className="bg-green-500 h-2.5 rounded-full"
                 style={{ width: "100%" }}

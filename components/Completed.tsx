@@ -13,7 +13,7 @@ const Completed = () => {
           <CardCompleted />
         </div>
 
-        <div className="flex flex-col gap-4 shadow-lg border border-gray-200 bg-xanh-dam rounded-lg mt-5 my-3 p-5 w-full max-w-lg">
+        <div className="flex flex-col gap-4 shadow-lg border border-gray-200 bg-xanh-dam rounded-lg p-5 w-full max-w-lg">
           <span className="text-xl font-bold text-white">More</span>
           <CardMore />
           <CardMore />
