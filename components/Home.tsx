@@ -1,4 +1,6 @@
 import React from "react";
+import { IoCalendarOutline } from "react-icons/io5";
+import { CiLocationOn, CiShare1 } from 'react-icons/ci';
 
 interface Props {
   t: any;
@@ -6,30 +8,37 @@ interface Props {
 
 const Homepage = (t: Props) => {
   return (
-    <div className="mx-auto my-0 w-full max-w-7xl">
-      <h1 className="text-4xl font-bold text-center my-5">{t.t.NAMEPROJECT}</h1>
-      <div className="flex flex-row justify-between mx-3">
-        <h4 className="text-xl underline">10/2023 - 10/2024</h4>
-        <h4 className="text-xl font-bold">{t.t.LOCATION}</h4>
+    <div className="mx-auto p-2 w-full max-w-7xl">
+      <p className="text-5xl font-bold text-center mb-3">{t.t.NAMEPROJECT}</p>
+      <div className="flex justify-between">
+        <div className="flex flex-row items-center justify-center order-first gap-2">
+          <IoCalendarOutline className="w-10 h-10" />
+          <span className="text-2xl">10/2023-10/2024</span>
+        </div>
+        <div className="order-last">
+          <CiLocationOn className="w-12 h-12" />
+        </div>
       </div>
       <div className="shadow-2xl border border-gray-200 bg-white rounded-lg mt-5 my-3">
-        <div className="flex flex-row gap-5 mx-2 my-2">
+        <div className="flex flex-row gap-5">
           <iframe
-            width="1000"
-            height="400"
+            className="w-10/12 rounded-l-lg"
+            height={450}
             src="https://www.youtube.com/embed/543jwFfCZvg?si=qPcHutduGIYha_68"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           ></iframe>
-          <div className="flex flex-col content-start w-auto">
+          <div className="flex flex-col justify-between p-4">
             <div>
-              <h2 className="text-2xl font-bold">Project name</h2>
+              <p className="text-3xl font-bold">Project name</p>
               <p className="text-base">
                 Description shdgajhd dáhjgda ádjgdjahs djasgdasjbd jasgd
                 ádjasgdajs duiassgdasj
               </p>
             </div>
-            <button className="text-end">share</button>
+            <div className="flex items-stretch w-full">
+              <CiShare1 className="self-end" />
+            </div>
             <div className="flex flex-row justify-between my-2">
               <a className="font-bold underline" href="#">
                 {t.t.DETAILS}

@@ -34,7 +34,7 @@ export default function Home() {
       <div className="sticky top-0 z-50">
         <Header language={language} setLanguage={changeLanguage} t={t} />
       </div>
-      <div className="mt-20">
+      <div className="mt-5">
         <Homepage t={t} />
         <Content />
         <Completed />
