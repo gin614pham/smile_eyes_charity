@@ -5,6 +5,7 @@ interface props {
   language: string;
   setLanguage: any;
   t: any;
+  changePage: any;
 }
 
 const Header = (props: props) => {
@@ -50,30 +51,47 @@ const Header = (props: props) => {
   ];
   return (
     <div className="bg-green-700 flex flex-row justify-between h-16 items-center">
-      <div className="mx-5 flex flex-row items-center">
+      <div
+        onClick={() => props.changePage("home")}
+        className="mx-5 flex flex-row items-center"
+      >
         <Image src="/logo.svg" alt="logo" width={50} height={50} />
         <h1 className=" text-yellow-300 mx-5">SMILE EYES CHARITY</h1>
       </div>
       <div className="flex flex-row justify-between gap-5 mx-5">
-        <a className="text-lg text-white hover:text-yellow-300" href="#project">
+        <a
+          onClick={() => props.changePage("home")}
+          className="text-lg text-white hover:text-yellow-300"
+          href="#project"
+        >
           {props.t.PROJECT}
         </a>
         <a
+          onClick={() => props.changePage("home")}
           className="text-lg text-white hover:text-yellow-300"
           href="#achievements"
         >
           {props.t.ACHIEVEMENT}
         </a>
-        <a className="text-lg text-white hover:text-yellow-300" href="#blog">
+        <a
+          onClick={() => props.changePage("home")}
+          className="text-lg text-white hover:text-yellow-300"
+          href="#blog"
+        >
           {props.t.BLOG}
         </a>
         <a
+          onClick={() => props.changePage("home")}
           className="text-lg text-white hover:text-yellow-300"
           href="#sponsors"
         >
           {props.t.SPONSORS}
         </a>
-        <a className="text-lg text-white hover:text-yellow-300" href="#">
+        <a
+          onClick={() => props.changePage("about")}
+          className="text-lg text-white hover:text-yellow-300"
+          href="#"
+        >
           {props.t.QACONTACT}
         </a>
         <div className="flex flex-row gap-1">
@@ -87,7 +105,6 @@ const Header = (props: props) => {
           <select
             name="language"
             id="language"
-            className=""
             onChange={(e) => props.setLanguage(e.target.value)}
             value={props.language}
             style={{ backgroundColor: "transparent", color: "white" }}

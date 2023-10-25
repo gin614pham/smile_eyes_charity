@@ -1,4 +1,5 @@
 import React from "react";
+import { IoShareSocialSharp } from "react-icons/io5";
 
 interface Props {
   t: any;
@@ -29,7 +30,9 @@ const Homepage = (t: Props) => {
                 ádjasgdajs duiassgdasj
               </p>
             </div>
-            <button className="text-end">share</button>
+            <button className="flex flex-row-reverse items-end">
+              <IoShareSocialSharp className="w-7 h-7 " />
+            </button>
             <div className="flex flex-row justify-between my-2">
               <a className="font-bold underline" href="#">
                 {t.t.DETAILS}

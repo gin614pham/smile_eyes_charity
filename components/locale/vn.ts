@@ -7,7 +7,8 @@ const FIXED_VIETNAMESE_WORD = {
   SPONSORS: "Đối tác",
   QACONTACT: "Q&A & Liên hệ",
 
-  NAMEPROJECT: "Dự án đô thị Pa-Ong",
+  NAMEPROJECT:
+    "Cụm dân cư Pă Căng mới của người Cơ Tu ở xã Cà Dy huyện Nam Giang",
   LOCATION: "Địa điểm",
   BUTTON_BE_THE_CONTRIBUTOR_OR_SPONSOR: "Trở thành người tham gia hoặc đối tác",
   DETAILS: "Chi tiết",
