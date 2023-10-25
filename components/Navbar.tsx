@@ -22,7 +22,7 @@ const Header = (props: props) => {
       value: "en",
       label: (
         <img
-          className="w-6 h-6"
+          className="w-6 h-4"
           src="https://vuongquocanh.com/wp-content/uploads/2018/04/la-co-vuong-quoc-anh.jpg"
           alt=""
         />
@@ -32,7 +32,7 @@ const Header = (props: props) => {
       value: "vn",
       label: (
         <img
-          className="w-6 h-6"
+          className="w-6 h-4"
           src="https://investone-law.com/wp-content/uploads/2019/06/quoc-ky-viet-nam.jpg"
           alt=""
         />
@@ -42,7 +42,7 @@ const Header = (props: props) => {
       value: "ja",
       label: (
         <img
-          className="w-6 h-6"
+          className="w-6 h-4"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/225px-Flag_of_Japan.svg.png"
           alt=""
         />
@@ -50,6 +50,7 @@ const Header = (props: props) => {
     },
   ];
   return (
+<<<<<<< HEAD:components/Header.tsx
     <div className="bg-green-700 flex flex-row justify-between h-16 items-center">
       <div
         onClick={() => props.changePage("home")}
@@ -69,10 +70,24 @@ const Header = (props: props) => {
         <a
           onClick={() => props.changePage("home")}
           className="text-lg text-white hover:text-yellow-300"
+=======
+    <div className="bg-xanh-le flex flex-row justify-between p-4 items-center">
+      <a className="flex flex-row items-center gap-5 mx-5" href="/">
+        <img src="/logo.svg" alt="logo" width={60} height={60} />
+        <p className="text-vang-khe text-2xl">SMILE EYES CHARITY</p>
+      </a>
+      <div className="flex flex-row justify-between gap-5 mx-5">
+        <a className="text-lg text-white hover:text-vang-khe" href="#project">
+          {props.t.PROJECT}
+        </a>
+        <a
+          className="text-lg text-white hover:text-vang-khe"
+>>>>>>> ad401daa257897dd2327213c2aafed43d8468e1d:components/Navbar.tsx
           href="#achievements"
         >
           {props.t.ACHIEVEMENT}
         </a>
+<<<<<<< HEAD:components/Header.tsx
         <a
           onClick={() => props.changePage("home")}
           className="text-lg text-white hover:text-yellow-300"
@@ -83,18 +98,29 @@ const Header = (props: props) => {
         <a
           onClick={() => props.changePage("home")}
           className="text-lg text-white hover:text-yellow-300"
+=======
+        <a className="text-lg text-white hover:text-vang-khe" href="#blog">
+          {props.t.BLOG}
+        </a>
+        <a
+          className="text-lg text-white hover:text-vang-khe"
+>>>>>>> ad401daa257897dd2327213c2aafed43d8468e1d:components/Navbar.tsx
           href="#sponsors"
         >
           {props.t.SPONSORS}
         </a>
+<<<<<<< HEAD:components/Header.tsx
         <a
           onClick={() => props.changePage("about")}
           className="text-lg text-white hover:text-yellow-300"
           href="#"
         >
+=======
+        <a className="text-lg text-white hover:text-vang-khe" href="#">
+>>>>>>> ad401daa257897dd2327213c2aafed43d8468e1d:components/Navbar.tsx
           {props.t.QACONTACT}
         </a>
-        <div className="flex flex-row gap-1">
+        <div className="flex flex-row justify-center items-center">
           {flag.map((item, index) =>
             item.value === props.language ? (
               <span key={index}>{item.label}</span>
@@ -105,12 +131,15 @@ const Header = (props: props) => {
           <select
             name="language"
             id="language"
+<<<<<<< HEAD:components/Header.tsx
+=======
+            className="w-7/12 bg-transparent text-white hover:cursor-pointer hover:text-vang-khe"
+>>>>>>> ad401daa257897dd2327213c2aafed43d8468e1d:components/Navbar.tsx
             onChange={(e) => props.setLanguage(e.target.value)}
             value={props.language}
-            style={{ backgroundColor: "transparent", color: "white" }}
           >
             {option.map((item, index) => (
-              <option key={index} style={{ color: "black" }} value={item.value}>
+              <option key={index} className="align-middle text-black" value={item.value}>
                 {item.label}
               </option>
             ))}
