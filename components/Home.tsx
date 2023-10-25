@@ -56,12 +56,12 @@ const Homepage = (t: Props) => {
 
               <div className="w-full bg-gray-200 rounded-full h-2.5">
                 <div
-                  className="bg-yellow-500 h-2.5 rounded-full"
+                  className="bg-vang-khe h-2.5 rounded-full"
                   style={{ width: "40%" }}
                 />
               </div>
             </div>
-            <button className="bg-red-300 rounded-lg p-2 font-bold">
+            <button className="bg-hong-bede rounded-lg p-2 font-bold">
               <div>{t.t.BUTTON_BE_THE_CONTRIBUTOR_OR_SPONSOR}</div>
             </button>
           </div>
