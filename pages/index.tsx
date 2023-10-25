@@ -17,7 +17,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   const [language, setLanguage] = useState("en");
   const [t, setT] = useState(en);
-  const changeLanguage = (e) => {
+  const changeLanguage = (e: any) => {
     setLanguage(e);
     if (e === "ja") {
       setT(ja);
@@ -31,14 +31,18 @@ export default function Home() {
   };
   return (
     <div className="bg-white">
-      <Header language={language} setLanguage={changeLanguage} t={t} />
-      <Homepage />
-      <Content />
-      <Completed />
-      <Blog />
-      <Contributors />
-      <Contact />
-      <Footer />
+      <div className="sticky top-0 z-50">
+        <Header language={language} setLanguage={changeLanguage} t={t} />
+      </div>
+      <div className="mt-20">
+        <Homepage t={t} />
+        <Content />
+        <Completed />
+        <Blog />
+        <Contributors />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }

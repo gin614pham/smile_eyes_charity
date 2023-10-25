@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { useState } from "react";
-import useLocale from "./locale/useLocale";
 
 interface props {
   language: string;
@@ -9,15 +8,6 @@ interface props {
 }
 
 const Header = (props: props) => {
-  // const [language, setLanguage] = useState("en");
-
-  // const changeLanguage = (e) => {
-  //   setLanguage(e.target.value);
-  //   console.log(e.target.value);
-  //   localStorage.setItem("language", e.target.value);
-  //   window.location.reload();
-  // };
-
   const option = [
     {
       value: "en",
@@ -87,22 +77,23 @@ const Header = (props: props) => {
           {props.t.QACONTACT}
         </a>
         <div className="flex flex-row gap-1">
-          {flag.map((item) =>
+          {flag.map((item, index) =>
             item.value === props.language ? (
-              <span>{item.label}</span>
+              <span key={index}>{item.label}</span>
             ) : (
-              <span></span>
+              <span key={index}></span>
             )
           )}
           <select
             name="language"
             id="language"
+            className=""
             onChange={(e) => props.setLanguage(e.target.value)}
             value={props.language}
             style={{ backgroundColor: "transparent", color: "white" }}
           >
-            {option.map((item) => (
-              <option style={{ color: "black" }} value={item.value}>
+            {option.map((item, index) => (
+              <option key={index} style={{ color: "black" }} value={item.value}>
                 {item.label}
               </option>
             ))}

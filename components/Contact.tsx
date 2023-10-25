@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div className="bg-green-200 flex flex-col items-center">
+    <div className="bg-emerald-200 flex flex-col items-center">
       <h3 className="text-2xl">Beacame Volonteer</h3>
       <h2 className="text-3xl font-bold">Join Our Organization</h2>
       <h4 className="text-xl">

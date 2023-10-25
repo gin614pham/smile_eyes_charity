@@ -33,7 +33,7 @@ const Contributors = () => {
         <div className=" border border-gray-200 dark:border-gray-700 dark:bg-gray-800 max-w-full rounded-lg shadow">
           <a
             href="#"
-            className="flex flex-col items-center  bg-green-300  md:flex-row md:max-w-full hover:bg-green-600 rounded-lg dark:hover:bg-gray-700"
+            className="flex flex-col items-center  bg-emerald-600  md:flex-row md:max-w-full hover:bg-green-600 rounded-lg dark:hover:bg-gray-700"
           >
             <img
               className="object-cover w-full rounded-full h-96 md:h-auto md:w-60 mx-2 my-2"
@@ -41,13 +41,13 @@ const Contributors = () => {
               alt=""
             />
             <div className="flex flex-col justify-between p-4 leading-normal">
-              <h2 className="mb-2 text-4xl font-bold tracking-tight text-gray-900 dark:text-white my-3">
+              <h2 className="mb-2 text-4xl font-bold tracking-tight text-white dark:text-white my-3">
                 Noteworthy technology acquisitions 2021
               </h2>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 my-2">
+              <p className="mb-3 font-normal text-white dark:text-gray-400 my-2">
                 email@example.com
               </p>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 my-3">
+              <p className="mb-3 font-normal text-white dark:text-gray-400 my-3">
                 Here are the biggest enterprise technology acquisitions of 2021
                 so far, in reverse chronological order.
               </p>

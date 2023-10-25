@@ -8,7 +8,7 @@ const CardProgram = () => {
           <iframe
             width="auto"
             height="315"
-            src="https://www.youtube.com/embed/vEpRyDuPVVU?si=KfFY1fWWuYcU5bX8"
+            src="https://www.youtube.com/embed/543jwFfCZvg?si=qPcHutduGIYha_68"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           ></iframe>

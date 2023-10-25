@@ -6,6 +6,12 @@ const FIXED_VIETNAMESE_WORD = {
   CONTACT: "Liên hệ",
   SPONSORS: "Đối tác",
   QACONTACT: "Q&A & Liên hệ",
+
+  NAMEPROJECT: "Dự án đô thị Pa-Ong",
+  LOCATION: "Địa điểm",
+  BUTTON_BE_THE_CONTRIBUTOR_OR_SPONSOR: "Trở thành người tham gia hoặc đối tác",
+  DETAILS: "Chi tiết",
+  PLAN: "Kế hoạch",
 };
 
 export default FIXED_VIETNAMESE_WORD;
